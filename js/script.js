@@ -20,3 +20,21 @@ let pokemonList = [
 
 
 
+
+
+for (let i = 0; i < pokemonList.length; i++) {
+    let pokemon = pokemonList[i]; 
+    let output = pokemon.name + " (height: " + pokemon.height + ")";
+
+    if (pokemon.height > 6) {
+        output += " - Wow, that's big!";
+    }
+
+    document.write(output + "<br>");
+}
+
+
+
+
+// Change Check
+
