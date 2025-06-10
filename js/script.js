@@ -1,4 +1,5 @@
-let pokemonList = [
+let varGlobalPokemonRepository = (function() {
+    let varPokemonListArray = [
     {
         name: "Bulbasaur",
         height: 7,
@@ -18,18 +19,27 @@ let pokemonList = [
     },
 ];
 
-
-
-
-
-for (let i = 0; i < pokemonList.length; i++) {
-    let pokemon = pokemonList[i]; 
-    let output = pokemon.name + " (height: " + pokemon.height + ")";
-
-    if (pokemon.height > 6) {
-        output += " - Wow, that's big!";
-    }
-
-    document.write(output + "<br>");
+function fgetAll () {
+    return varPokemonListArray
 }
+
+function fadd (item) {
+    varPokemonListArray.push(item);
+}
+
+return {
+    fgetAll: fgetAll,
+    fadd: fadd
+};
+
+})();
+
+let varPokemonDisplayed = varGlobalPokemonRepository.fgetAll();
+
+varPokemonDisplayed.forEach(function (varEachElementDisplayed) {
+    console.log(varEachElementDisplayed)
+})
+
+
+
 
