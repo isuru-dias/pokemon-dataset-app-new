@@ -1,0 +1,24 @@
+.button-one {
+    color: red;
+    font-size: 28px;
+    border: 1px solid red;
+}
+
+
+
+
+@media screen and (max-width: 760px) { 
+    body {
+        padding: 10px; 
+    }
+
+    .container-one {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-one ul li button {
+        font-size: 34px; 
+        color: blue; 
+    }
+}
