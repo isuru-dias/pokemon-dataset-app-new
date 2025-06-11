@@ -67,7 +67,7 @@ let varGlobalPokemonRepository = (function () {          // Start of IIFE
         fdisplayListItem: fdisplayListItem
     };
 
-    
+
 })();          // End of IIFE
 
 
@@ -78,9 +78,6 @@ let varGlobalPokemonRepository = (function () {          // Start of IIFE
 so that we can call on the local function fgetAll 
 to display the list of all the Pokemon */
 let varPokemonDisplayed = varGlobalPokemonRepository.fgetAll();
-
-
-
 
 
 // Looping through each individual Pokemon, and displaying each Pokemon on the page
