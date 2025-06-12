@@ -7,12 +7,14 @@
 
 
 
+
 @media screen and (max-width: 760px) { 
     body {
         padding: 10px; 
     }
 
     .container-one {
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
